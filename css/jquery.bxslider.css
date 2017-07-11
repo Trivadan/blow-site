@@ -1,0 +1,506 @@
+/** VARIABLES 
+===================================*/
+/** RESET AND LAYOUT
+===================================*/
+.mainslider .bx-wrapper {
+  position: relative;
+  padding: 0;
+  *zoom: 1;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+}
+.mainslider .bx-wrapper {
+	width:100% !important;
+}
+.mainslider .bx-wrapper img {
+  max-width: 100%;
+  display: block;
+}
+.mainslider  .bxslider {
+  margin: 0;
+  padding: 0;
+}
+ul.bxslider {
+  list-style: none;
+}
+.bx-viewport {
+  /*fix other elements on the page moving (on Chrome)*/
+  -webkit-transform: translatez(0);
+}
+/** THEME
+===================================*/
+.mainslider .bx-wrapper {
+  background: #fff;
+}
+.mainslider .bx-wrapper .bx-pager,
+.mainslider .bx-wrapper .bx-controls-auto {
+position: absolute;
+    top: 0%;
+    width: 100%;
+    right: 0;
+}
+/* LOADER */
+.mainslider .bx-wrapper .bx-loading {
+  min-height: 50px;
+  background: url('../images/bx_loader.gif') center center no-repeat #ffffff;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+}
+/* PAGER */
+.mainslider .bx-wrapper .bx-pager {
+	text-align: right;
+	font-size: .85em;
+	font-family: Arial;
+	font-weight: bold;
+	color: #666;
+	padding-top: 20px;
+	margin-right: 5%;
+}
+.mainslider .bx-wrapper .bx-pager.bx-default-pager a {
+  background: #b87d8b;
+  text-indent: -9999px;
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  outline: 0;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+.mainslider .bx-wrapper .bx-pager.bx-default-pager a:hover,
+.mainslider .bx-wrapper .bx-pager.bx-default-pager a.active,
+.mainslider .bx-wrapper .bx-pager.bx-default-pager a:focus {
+  background: #d4ad6d;
+}
+.mainslider .bx-wrapper .bx-pager-item,
+.mainslider .bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+  display: inline-block;
+  *zoom: 1;
+  *display: inline;
+}
+.mainslider .bx-wrapper .bx-pager-item {
+  font-size: 0;
+  line-height: 0;
+}
+/* DIRECTION CONTROLS (NEXT / PREV) */
+.mainslider .bx-wrapper .bx-prev {
+  left: 5%;
+  background: url('../images/prevarrow.png') no-repeat;
+}
+.mainslider .bx-wrapper .bx-next {
+  right:5%;
+  background: url('../images/nextarrow.png') no-repeat;
+}
+.mainslider .bx-wrapper .bx-controls-direction a {
+  position: absolute;
+  top: 50%;
+  margin-top: -5%;
+  outline: 0;
+  width:51px;
+  height:99px;
+  text-indent: -9999px;
+  z-index: 9999;
+}
+.mainslider .bx-wrapper .bx-controls-direction a.disabled {
+  display: none;
+}
+/* AUTO CONTROLS (START / STOP) */
+.mainslider .bx-wrapper .bx-controls-auto {
+  text-align: center;
+}
+.mainslider .bx-wrapper .bx-controls-auto .bx-start {
+  display: block;
+  text-indent: -9999px;
+  width: 10px;
+  height: 11px;
+  outline: 0;
+  background: url('../images/controls.png') -86px -11px no-repeat;
+  margin: 0 3px;
+}
+.mainslider .bx-wrapper .bx-controls-auto .bx-start:hover,
+.mainslider .bx-wrapper .bx-controls-auto .bx-start.active,
+.mainslider .bx-wrapper .bx-controls-auto .bx-start:focus {
+  background-position: -86px 0;
+}
+.mainslider .bx-wrapper .bx-controls-auto .bx-stop {
+  display: block;
+  text-indent: -9999px;
+  width: 9px;
+  height: 11px;
+  outline: 0;
+  background: url('../images/controls.png') -86px -44px no-repeat;
+  margin: 0 3px;
+}
+.mainslider .bx-wrapper .bx-controls-auto .bx-stop:hover,
+.mainslider .bx-wrapper .bx-controls-auto .bx-stop.active,
+.mainslider .bx-wrapper .bx-controls-auto .bx-stop:focus {
+  background-position: -86px -33px;
+}
+/* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
+.mainslider .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
+  text-align: left;
+  width: 80%;
+}
+.mainslider .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
+  right: 0;
+  width: 35px;
+}
+/* IMAGE CAPTIONS */
+.mainslider .bx-wrapper .bx-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #666;
+  background: rgba(80, 80, 80, 0.75);
+  width: 100%;
+}
+.mainslider .bx-wrapper .bx-caption span {
+  color: #fff;
+  font-family: Arial;
+  display: block;
+  font-size: .85em;
+  padding: 10px;
+}
+
+/** VARIABLES 
+===================================*/
+/** RESET AND LAYOUT
+===================================*/
+.blueslide .bx-wrapper {
+  position: relative;
+  padding: 0;
+  *zoom: 1;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+}
+.blueslide .bx-wrapper {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+.blueslide .bx-wrapper img {
+  max-width: 100%;
+  display: block;
+  margin:0 auto;
+}
+.blueslide .bxslider {
+  margin: 0;
+  padding: 0;
+}
+ul.bxslider {
+  list-style: none;
+}
+.bx-viewport {
+  /*fix other elements on the page moving (on Chrome)*/
+  -webkit-transform: translatez(0);
+}
+/** THEME
+===================================*/
+.blueslide .bx-wrapper .bx-pager,
+.blueslide .bx-wrapper .bx-controls-auto {
+	position: absolute;
+	top: 0%;
+	width: 100%;
+	right: 0;
+}
+/* LOADER */
+.blueslide .bx-wrapper .bx-loading {
+  min-height: 50px;
+  background: url('../images/bx_loader.gif') center center no-repeat #ffffff;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+}
+/* PAGER */
+.blueslide .bx-wrapper .bx-pager {
+	text-align: right;
+	font-size: .85em;
+	font-family: Arial;
+	font-weight: bold;
+	color: #666;
+	padding-top: 20px;
+	margin-right: 5%;
+}
+.blueslide .bx-wrapper .bx-pager.bx-default-pager a {
+  background: #b87d8b;
+  text-indent: -9999px;
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  outline: 0;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+.blueslide .bx-wrapper .bx-pager.bx-default-pager a:hover,
+.blueslide .bx-wrapper .bx-pager.bx-default-pager a.active,
+.blueslide .bx-wrapper .bx-pager.bx-default-pager a:focus {
+  background: #d4ad6d;
+}
+.blueslide .bx-wrapper .bx-pager-item,
+.blueslide .bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+  display: inline-block;
+  *zoom: 1;
+  *display: inline;
+}
+.blueslide .bx-wrapper .bx-pager-item {
+  font-size: 0;
+  line-height: 0;
+}
+/* DIRECTION CONTROLS (NEXT / PREV) */
+.blueslide .bx-wrapper .bx-prev {
+  left:1%;
+  background: url('../images/blueprev.png') no-repeat;
+}
+.blueslide .bx-wrapper .bx-next {
+  right:.5%;
+  background: url('../images/bluenext.png') no-repeat;
+}
+.blueslide .bx-wrapper .bx-controls-direction a {
+  position: absolute;
+  top:0;
+  margin-top:-3%;
+  outline: 0;
+  width:80px;
+  height:37px;
+  text-indent: -9999px;
+  z-index: 9999;
+}
+.blueslide .bx-wrapper .bx-controls-direction a.disabled {
+  display: none;
+}
+/* AUTO CONTROLS (START / STOP) */
+.blueslide .bx-wrapper .bx-controls-auto {
+  text-align: center;
+}
+.blueslide .bx-wrapper .bx-controls-auto .bx-start {
+  display: block;
+  text-indent: -9999px;
+  width: 10px;
+  height: 11px;
+  outline: 0;
+  background: url('../images/controls.png') -86px -11px no-repeat;
+  margin: 0 3px;
+}
+.blueslide .bx-wrapper .bx-controls-auto .bx-start:hover,
+.blueslide .bx-wrapper .bx-controls-auto .bx-start.active,
+.blueslide .bx-wrapper .bx-controls-auto .bx-start:focus {
+  background-position: -86px 0;
+}
+.blueslide .bx-wrapper .bx-controls-auto .bx-stop {
+  display: block;
+  text-indent: -9999px;
+  width: 9px;
+  height: 11px;
+  outline: 0;
+  background: url('../images/controls.png') -86px -44px no-repeat;
+  margin: 0 3px;
+}
+.blueslide .bx-wrapper .bx-controls-auto .bx-stop:hover,
+.blueslide .bx-wrapper .bx-controls-auto .bx-stop.active,
+.blueslide .bx-wrapper .bx-controls-auto .bx-stop:focus {
+  background-position: -86px -33px;
+}
+/* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
+.blueslide .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
+  text-align: left;
+  width: 80%;
+}
+.blueslide .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
+  right: 0;
+  width: 35px;
+}
+/* IMAGE CAPTIONS */
+.blueslide .bx-wrapper .bx-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #666;
+  background: rgba(80, 80, 80, 0.75);
+  width: 100%;
+}
+.blueslide .bx-wrapper .bx-caption span {
+  color: #fff;
+  font-family: Arial;
+  display: block;
+  font-size: .85em;
+  padding: 10px;
+}
+/** VARIABLES 
+===================================*/
+/** RESET AND LAYOUT
+===================================*/
+.innerslide .bx-wrapper {
+  position: relative;
+  padding: 0;
+  *zoom: 1;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+}
+.innerslide .bx-wrapper {
+	width:100% !important;
+}
+.innerslide .bx-wrapper img {
+  max-width: 100%;
+  display: block;
+}
+.innerslide  .bxslider {
+  margin: 0;
+  padding: 0;
+}
+ul.bxslider {
+  list-style: none;
+}
+.bx-viewport {
+  /*fix other elements on the page moving (on Chrome)*/
+  -webkit-transform: translatez(0);
+}
+/** THEME
+===================================*/
+.innerslide .bx-wrapper {
+  background: #fff;
+}
+.innerslide .bx-wrapper .bx-pager,
+.innerslide .bx-wrapper .bx-controls-auto {
+position: absolute;
+    top: 0%;
+    width: 100%;
+    right: 0;
+}
+/* LOADER */
+.innerslide .bx-wrapper .bx-loading {
+  min-height: 50px;
+  background: url('../images/bx_loader.gif') center center no-repeat #ffffff;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+}
+/* PAGER */
+.innerslide .bx-wrapper .bx-pager {
+	text-align: right;
+	font-size: .85em;
+	font-family: Arial;
+	font-weight: bold;
+	color: #666;
+	padding-top: 20px;
+	margin-right: 5%;
+}
+.innerslide .bx-wrapper .bx-pager.bx-default-pager a {
+  background: #b87d8b;
+  text-indent: -9999px;
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  outline: 0;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+.innerslide .bx-wrapper .bx-pager.bx-default-pager a:hover,
+.innerslide .bx-wrapper .bx-pager.bx-default-pager a.active,
+.innerslide .bx-wrapper .bx-pager.bx-default-pager a:focus {
+  background: #d4ad6d;
+}
+.innerslide .bx-wrapper .bx-pager-item,
+.innerslide .bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+  display: inline-block;
+  *zoom: 1;
+  *display: inline;
+}
+.innerslide .bx-wrapper .bx-pager-item {
+  font-size: 0;
+  line-height: 0;
+}
+/* DIRECTION CONTROLS (NEXT / PREV) */
+.innerslide .bx-wrapper .bx-prev {
+  left:0;
+  background: url('../images/innerslidenextprev.png') 50% 50% no-repeat;
+}
+.innerslide .bx-wrapper .bx-next {
+  right:0;
+  background: url('../images/innerslidenextarrow.png') 50% 50% no-repeat;
+}
+.innerslide .bx-wrapper .bx-controls-direction a {
+    position: absolute;
+    top: 0;
+    outline: 0;
+    width: 51px;
+    height: 100%;
+    text-indent: -9999px;
+    z-index: 9999;
+    background-color: #4db2a4;
+	padding:0 10px;
+}
+.innerslide .bx-wrapper .bx-controls-direction a.disabled {
+  display: none;
+}
+/* AUTO CONTROLS (START / STOP) */
+.innerslide .bx-wrapper .bx-controls-auto {
+  text-align: center;
+}
+.innerslide .bx-wrapper .bx-controls-auto .bx-start {
+  display: block;
+  text-indent: -9999px;
+  width: 10px;
+  height: 11px;
+  outline: 0;
+  background: url('../images/controls.png') -86px -11px no-repeat;
+  margin: 0 3px;
+}
+.innerslide .bx-wrapper .bx-controls-auto .bx-start:hover,
+.innerslide .bx-wrapper .bx-controls-auto .bx-start.active,
+.innerslide .bx-wrapper .bx-controls-auto .bx-start:focus {
+  background-position: -86px 0;
+}
+.innerslide .bx-wrapper .bx-controls-auto .bx-stop {
+  display: block;
+  text-indent: -9999px;
+  width: 9px;
+  height: 11px;
+  outline: 0;
+  background: url('../images/controls.png') -86px -44px no-repeat;
+  margin: 0 3px;
+}
+.innerslide .bx-wrapper .bx-controls-auto .bx-stop:hover,
+.innerslide .bx-wrapper .bx-controls-auto .bx-stop.active,
+.innerslide .bx-wrapper .bx-controls-auto .bx-stop:focus {
+  background-position: -86px -33px;
+}
+/* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
+.innerslide .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
+  text-align: left;
+  width: 80%;
+}
+.innerslide .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
+  right: 0;
+  width: 35px;
+}
+/* IMAGE CAPTIONS */
+.innerslide .bx-wrapper .bx-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #666;
+  background: rgba(80, 80, 80, 0.75);
+  width: 100%;
+}
+.innerslide .bx-wrapper .bx-caption span {
+  color: #fff;
+  font-family: Arial;
+  display: block;
+  font-size: .85em;
+  padding: 10px;
+}
+
